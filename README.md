@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📊 ADmyBRAND Insights - Analytics Dashboard
 
-## Getting Started
+A modern, responsive analytics dashboard built with React and Next.js, featuring beautiful UI design, interactive charts, and real-time data visualization for digital marketing agencies.
 
-First, run the development server:
+## 🚀 Live Demo
+
+**🌐 [View Live Dashboard](https://ai-powered-analytics-dashboard-qvme-e47rkszqn.vercel.app/)**
+
+## ✨ Features
+
+### 📈 **Interactive Analytics**
+- **Real-time Data Visualization** - Line charts, bar charts, and pie charts with smooth animations
+- **Metric Cards** - Key performance indicators with growth percentages and trend indicators
+- **Advanced Data Table** - Sortable columns, search functionality, and pagination
+- **Period Selection** - Toggle between 7d, 30d, and 90d views
+
+### 🎨 **Modern UI/UX**
+- **Dark/Light Mode Toggle** - Seamless theme switching with system preference detection
+- **Responsive Design** - Perfect experience on desktop, tablet, and mobile devices
+- **Smooth Animations** - Micro-interactions and hover effects throughout
+- **Glassmorphism Design** - Modern aesthetic with beautiful gradients and shadows
+
+### ⚡ **Performance & Accessibility**
+- **Fast Loading** - Optimized with Next.js 14+ App Router
+- **SEO Friendly** - Meta tags and semantic HTML structure
+- **Keyboard Navigation** - Full accessibility support
+- **Cross-browser Compatible** - Works on all modern browsers
+
+## 📦 Installation & Setup
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn package manager
+- Git (optional)
+
+### Quick Start
 
 ```bash
+# Clone the repository
+git clone https://https://github.com/shivswrj/AI-Powered-Analytics-Dashboard.git
+cd admybrand dashboard
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+### Manual Setup
+
+```bash
+# Create new Next.js project
+npx create-next-app@latest admybrand-dashboard --tailwind --eslint --app
+cd admybrand-dashboard
+
+# Install required dependencies
+npm install recharts lucide-react
+
+# Configure Tailwind for dark mode (see tailwind.config.js)
+# Copy dashboard component to app/page.js
+# Update app/globals.css with Tailwind directives
+
+# Run the project
+npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to see the dashboard in action.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+admybrand-dashboard/
+├── app/
+│   ├── globals.css          # Global styles and Tailwind imports
+│   ├── layout.js           # Root layout component
+│   ├── page.js             # Main dashboard component
+│   └── favicon.ico
+├── public/                 # Static assets
+├── components/            # Reusable components (if extracted)
+├── tailwind.config.js     # Tailwind configuration
+├── next.config.js         # Next.js configuration
+├── package.json           # Dependencies and scripts
+└── README.md             # Project documentation
+```
 
-## Learn More
+## 🎨 Key Components
 
-To learn more about Next.js, take a look at the following resources:
+### MetricCard Component
+- Displays KPI metrics with animated counters
+- Gradient backgrounds and hover effects
+- Growth percentage indicators with color coding
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Interactive Charts
+- **Line Chart**: Revenue trends over time
+- **Bar Chart**: Traffic source distribution  
+- **Pie Chart**: Device type breakdown
+- All charts feature smooth animations and tooltips
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Data Table
+- Sortable columns with visual indicators
+- Real-time search filtering
+- Pagination with navigation controls
+- Responsive design for mobile viewing
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Deploy to Vercel (Recommended)
+# Using Vercel CLI
+npm install -g vercel
+vercel login
+vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
